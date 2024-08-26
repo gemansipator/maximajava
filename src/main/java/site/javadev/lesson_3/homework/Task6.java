@@ -25,10 +25,10 @@ public class Task6 {
         int c = scanner.nextInt();
 
         // Проверка условия существования треугольника
-        boolean triangle = (c < a + b) && (b < c + a) && (a < b + c);
+        boolean isTriangleExist = (c < a + b) && (b < c + a) && (a < b + c);
 
         // Меняем местами if и else
-        if (triangle) {
+        if (isTriangleExist) {
             System.out.println("Треугольник существует.");
         } else {
             System.out.println("Треугольника с такими сторонами не существует.");
