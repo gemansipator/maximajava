@@ -1,7 +1,5 @@
 package site.javadev.lesson_4.homework;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 /**1
  Ввести с клавиатуры два числа m и n.
@@ -13,20 +11,14 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число m: ");
-        int m = scanner.nextInt();
-        System.out.println("Введите число n: ");
-        int n = scanner.nextInt();
+        int m = 2;
+        int n = 4;
 
-        int[][] arr = new int[m][n];
-
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-//                arr[i][j] = j + 1;
-                arr[i][j] = 8;
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(8);
             }
-            System.out.println(Arrays.toString(arr[i]));
+            System.out.println();
         }
 
     }
