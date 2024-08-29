@@ -32,31 +32,3 @@ public class Task3 {
         scanner.close();
     }
 }
-//Первый вариант:
-//public class Task3 {
-//    public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Введите первое число: ");
-//        int number = scanner.nextInt();
-//        System.out.println("Введите второе число: ");
-//        int number2 = scanner.nextInt();
-//        System.out.println("Введите третье число: ");
-//        int number3 = scanner.nextInt();
-//
-//        if (number == number2 && number2 == number3) {
-//            System.out.println("Все числа равны. Вы ввели: "+number);
-//        }
-//        else if(number2 > number && number2 < number3) {
-//            System.out.println("Среднее по значению: "+number2);
-//        }
-//        else if (number > number2 && number < number3) {
-//            System.out.println("Среднее по значению: "+number);
-//
-//        }else if (number3 < number2 && number > number2){
-//            System.out.println("Среднее по значению: "+number2);
-//        }else {
-//            System.out.println("Среднее по значению: "+number3);
-//        }
-//
-//    }
-//}
