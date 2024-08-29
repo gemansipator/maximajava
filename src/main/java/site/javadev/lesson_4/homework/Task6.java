@@ -16,6 +16,10 @@ import java.util.Scanner;
  Я родился 15.2.1988*/
 public class Task6 {
     public static void main(String[] args) {
+//        String name = "Джон";
+//        int age = 25;
+//
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите своё имя: ");
         String name = scanner.nextLine();
@@ -26,8 +30,9 @@ public class Task6 {
         System.out.println("Введите год рождения: ");
         int d = scanner.nextInt();
 
-        System.out.println("Меня зовут "+ name+".");
-        System.out.println("Я родился "+y+"."+m+"."+d);
+        String formatted = String.format("Меня зовут %s.  \nЯ родился %d.%d.%d", name, y,m,d);
+        System.out.println(formatted);
+
 
 
 
