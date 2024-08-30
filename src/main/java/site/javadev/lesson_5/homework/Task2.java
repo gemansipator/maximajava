@@ -18,6 +18,7 @@ public class Task2 {
             }
 
         }
+        scanner.close();
         System.out.println("Максимальное число в массиве: " + maxValue);
 
 

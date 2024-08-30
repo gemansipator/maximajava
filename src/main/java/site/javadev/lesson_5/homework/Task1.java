@@ -19,6 +19,7 @@ public class Task1 {
                 System.out.println(arr[i]);
             }
         }
+        scanner.close();
 
     }
 }
