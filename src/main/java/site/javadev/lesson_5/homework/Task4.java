@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите десять числе диапазона int: ");
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
