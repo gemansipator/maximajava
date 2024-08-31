@@ -14,10 +14,8 @@ public class Task1 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scanner.nextLine();
         }
-        for (int i = 9; i < arr.length ; i--) {
-            if (i >= 0){
+        for (int i = arr.length -1; i >= 0 ; i--) {
                 System.out.println(arr[i]);
-            }
         }
         scanner.close();
 

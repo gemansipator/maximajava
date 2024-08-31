@@ -10,23 +10,20 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] arr = new int[20];
-        int[] arr2 = new int[10];
-        int[] arr3 = new int[10];
+        int[] numbers = new int[20];
+        int[] firstHalfNumbers = new int[10];
+        int[] secondHalfNumbers = new int[10];
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = scanner.nextInt();
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = scanner.nextInt();
         }
         for (int i = 0; i <= 9; i++) {
-            arr2[i]= arr[i];
+            firstHalfNumbers[i]= numbers[i];
         }
-        for (int i = 10; i < arr.length; i++) {
+        for (int i = 10; i < numbers.length; i++) {
             int j = i -10;
-            arr3[j] = arr[i];
+            System.out.println(secondHalfNumbers[j] = numbers[i]);
 
-        }
-        for (int i = 0; i < arr3.length; i++) {
-            System.out.println(arr3[i]);
         }
     }
 }

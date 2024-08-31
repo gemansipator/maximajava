@@ -7,7 +7,7 @@ import java.util.Scanner;
  2. Найти максимальное число из элементов массива*/
 public class Task2 {
     public static void main(String[] args) {
-        int maxValue = 0;
+        int maxValue  = Integer.MIN_VALUE;
         Scanner scanner = new Scanner(System.in);
         int [] arr = new int[10];
 
