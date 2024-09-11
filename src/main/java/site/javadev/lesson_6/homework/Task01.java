@@ -24,11 +24,11 @@ public class Task01 {
             String upperCaseLetters = input.toUpperCase();
 
             if (upperCaseLetters.length() % 2 == 0) {
-                upperCaseLetters = upperCaseLetters + upperCaseLetters;
-                System.out.println( upperCaseLetters);
+                String result = upperCaseLetters.repeat(2);
+                System.out.println(result);
             }else {
-                upperCaseLetters = upperCaseLetters + upperCaseLetters +upperCaseLetters;
-                System.out.println(upperCaseLetters);
+                String result = upperCaseLetters.repeat(3);
+                System.out.println(result);
 
             }
 
