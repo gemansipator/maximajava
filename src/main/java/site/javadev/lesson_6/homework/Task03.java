@@ -13,10 +13,8 @@ public class Task03 {
         for (int i = 0; i < 8; i++) {
             str[i] = scanner.next();
         }
-        for (int i = 9; i < str.length ; i--) {
-            if (i >= 0) {
-                System.out.println(str[i]);
-            }
+        for (int i = 9; i >= 0 ; i--) {
+            System.out.println(str[i]);
         }
     }
 }
