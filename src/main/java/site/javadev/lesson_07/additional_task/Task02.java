@@ -21,7 +21,8 @@ public class Task02 {
 
         int lastDigit = number % 10; // Последняя цифра
         int remainingNumber = number / 10; // Оставшаяся часть числа
-        return lastDigit + sumOfDigits(remainingNumber); // Рекурсивный вызов
+        return lastDigit + sumOfDigits(remainingNumber); // Рекурсивный вызов для оставшейся части числа и
+        // суммирование последней цифры
     }
 
 }
