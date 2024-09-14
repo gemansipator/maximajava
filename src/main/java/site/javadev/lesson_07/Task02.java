@@ -9,11 +9,10 @@ import java.util.Scanner;
  и false, если число меньше 5*/
 public class Task02 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println(checkNumber(sc.nextInt()));
+        Scanner number = new Scanner(System.in);
+        System.out.println(checkNumber(number.nextInt()));
     }
-
-    private static boolean checkNumber(int sc) {
-        return sc >= 5;
+    private static boolean checkNumber(int number) {
+        return number >= 5;
     }
 }
