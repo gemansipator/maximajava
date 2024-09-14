@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class Task03 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        Scanner s1 = new Scanner(System.in);
+
         System.out.println("Введите первое число: ");
         int number01 = s.nextInt();
         System.out.println("Введите второе число: ");
-        int number02 = s1.nextInt();
+        int number02 = s.nextInt();
 
         System.out.println("Минимальное значение: "+ minimumNumber(number01, number02));
 
