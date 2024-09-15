@@ -32,34 +32,22 @@ public class Task05 {
         return sc.nextInt();
     }
     private static double calc(int num1, int num2, char operation) {
-        // Проверка, что num2 < num1 только для деления
-        if (operation == '/' && num2 > num1) {
-            System.out.println("Ошибка: num2 должно быть меньше num1 для деления, чтобы результат был больше 0");
-            return -1; // Указываем на ошибку
-        }
-        double result;
-        switch (operation) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result =  num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
+        return switch (operation) {
+            case '+' -> num1 + num2;
+            case '-' -> num1 - num2;
+            case '*' -> num1 * num2;
+            case '/' -> {
                 if (num2 == 0) {
-                    System.out.println("Делить на ноль нельзя");
-                    return -1; //для указания ошибки
+                    System.out.println("Ошибка: деление на ноль!");
+                    yield -1;
                 }
-                result = (double) num1 / num2; // Приведение к double для корректного деления
-                break;
-            default:
+                yield (double) num1 / num2;
+            }
+            default -> {
                 System.out.println("Ошибка: неизвестная операция");
-                return -1;  //для указания ошибки
-        }
-        return result;
+                yield -1;
+            }
+        };
     }
-
 }
+
