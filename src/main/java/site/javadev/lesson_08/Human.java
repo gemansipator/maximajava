@@ -31,8 +31,7 @@ public class Human {
 
         String gender = sex ? "мужской" : "женский";
 
-        return "Имя: " + name + "\nПол: " + gender + "\nВозраст: " + age +
-                "\nОтец: " + fatherInfo + "\nМать: " + motherInfo + "\n";
+        return String.format("Имя: %s\nПол: %s\nВозраст: %d\nОтец: %s\nМать: %s\n", name, gender, age,fatherInfo, motherInfo );
     }
 
     public Human(String name, boolean sex, int age) {
