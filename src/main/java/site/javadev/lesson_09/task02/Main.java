@@ -7,12 +7,23 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Category iPhone = new Category();
-        Category Tablet = new Category();
-        Category Android = new Category();
-        Basket basket = new Basket(iPhone.products);
+        Product [] iphoneProducts = {
+                new Product("iPhone 13", 999.99, 4.5),
+                new Product("iPhone 6", 699.99, 4.0),
+        };
+        Product [] tvProducts = {
+                new Product("Panasonic", 339.99, 4.2),
+                new Product("LG", 779.99, 4.0),
+        };
 
-        User ivan = new User("Papa0998", "Biwe@uf11", iPhone);
+        Category iPhones = new Category("iPhone", iphoneProducts);
+        Category tv = new Category("Tv", tvProducts);
+
+
+        //пустая корзина
+        Basket basket = new Basket();
+
+        User ivan = new User("Papa0998", "Biwe@uf11", basket);
 
 
 

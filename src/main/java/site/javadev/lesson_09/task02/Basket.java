@@ -1,9 +1,10 @@
 package site.javadev.lesson_09.task02;
 
 public class Basket {
-    Product[] purchasedProducts; // массив купленных товаров
+    private Product[] purchasedProducts; // массив купленных товаров
 
-    public Basket(Product[] purchasedProducts) {
-        this.purchasedProducts = purchasedProducts;
+    public Basket() {
+        this.purchasedProducts = new Product[0]; // инициализация пустым массивом
     }
+
 }
