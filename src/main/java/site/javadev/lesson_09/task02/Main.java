@@ -26,7 +26,5 @@ public class Main {
         User ivan = new User("Papa0998", "Biwe@uf11", basket);
 
 
-
-
     }
 }

@@ -7,6 +7,4 @@ public class Category {
         this.name = name;
         this.products = products;
     }
-
-
 }
