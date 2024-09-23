@@ -20,8 +20,8 @@ public class Main {
         Category tv = new Category("Tv", tvProducts);
 
 
-        //пустая корзина
-        Basket basket = new Basket();
+        //корзина уже не пустая, так как она инициализируется товарами из категории iPhone.
+        Basket basket = new Basket(iphoneProducts);
 
         User ivan = new User("Papa0998", "Biwe@uf11", basket);
 
