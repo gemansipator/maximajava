@@ -3,8 +3,8 @@ package site.javadev.lesson_09.task01;
 public class Vet {
     public void treatAnimal(Animal animal) {
         System.out.println("Ветеринар осматривает " + animal);
-        System.out.println("Еда: " + animal.food);
-        System.out.println("Местоположение: " + animal.location);
+        System.out.println("Еда: " + animal.getFood());
+        System.out.println("Местоположение: " + animal.getLocation());
 
         animal.sleep();
     }
