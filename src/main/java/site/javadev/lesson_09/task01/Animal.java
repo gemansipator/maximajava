@@ -1,8 +1,8 @@
 package site.javadev.lesson_09.task01;
 
 public abstract class Animal {
-    String food;
-    String location;
+    protected String food;
+    protected String location;
 
     abstract void makeNoise();
 
