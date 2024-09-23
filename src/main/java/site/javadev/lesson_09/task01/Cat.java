@@ -2,7 +2,7 @@ package site.javadev.lesson_09.task01;
 
 public class Cat extends Animal{
 
-    int purringVolume; //Громкость мурлыкания в децибелах. Средняя 25
+    private int purringVolume; //Громкость мурлыкания в децибелах. Средняя 25
 
     public Cat(int purringVolume, String food, String location) {
         this.food = food;
