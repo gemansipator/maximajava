@@ -1,7 +1,7 @@
 package site.javadev.lesson_09.task01;
 
 public class Horse extends Animal {
-    int maneLength; // длина гривы в сантиметрах
+    private int maneLength; // длина гривы в сантиметрах
 
     public Horse(int maneLength, String food, String location) {
         this.food = food;
