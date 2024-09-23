@@ -2,7 +2,7 @@ package site.javadev.lesson_09.task01;
 
 public class Dog extends Animal{
 
-    int loyaltyLevel;    //Уровень преданности хозяину. от 1 до 10
+    private int loyaltyLevel;    //Уровень преданности хозяину. от 1 до 10
 
     public Dog( int loyaltyLevel, String food, String location) {
         this.food = food;
