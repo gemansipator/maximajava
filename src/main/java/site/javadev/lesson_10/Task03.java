@@ -1,7 +1,6 @@
 package site.javadev.lesson_10;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 /**1. Создай список строк.
@@ -21,7 +20,7 @@ public class Task03 {
         }
 
         int minLength = Integer.MAX_VALUE;
-        List<String> longestStrings = new ArrayList<>();
+        ArrayList<String> longestStrings = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).length() < minLength) {

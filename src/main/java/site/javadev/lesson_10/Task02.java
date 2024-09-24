@@ -20,7 +20,7 @@ public class Task02 {
         }
 
         int maxLength = Integer.MIN_VALUE;
-        List<String> longestStrings = new ArrayList<>();
+        ArrayList<String> longestStrings = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).length() > maxLength) {
