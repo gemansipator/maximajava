@@ -34,8 +34,8 @@ public class Task02 {
         }
         
         System.out.println("Вывод всех самых длинных строк: ");
-        for (int i = 0; i < longestStrings.size(); i++) {
-            System.out.println(longestStrings.get(i));
+        for (String s : longestStrings) {
+            System.out.println(s);
         }
 
 

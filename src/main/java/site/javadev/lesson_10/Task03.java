@@ -34,8 +34,8 @@ public class Task03 {
         }
         
         System.out.println("Вывод всех самых коротких строк: ");
-        for (int i = 0; i < shortestStrings.size(); i++) {
-            System.out.println(shortestStrings.get(i));
+        for (String s : shortestStrings) {
+            System.out.println(s);
         }
 
 
