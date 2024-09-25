@@ -20,22 +20,22 @@ public class Task03 {
         }
 
         int minLength = Integer.MAX_VALUE;
-        ArrayList<String> longestStrings = new ArrayList<>();
+        ArrayList<String> shortestStrings = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).length() < minLength) {
                 minLength = list.get(i).length();
-                longestStrings.clear();  // очищаем список, так как нашли новую максимальную длину
-                longestStrings.add(list.get(i)); // добавляем текущую строку
+                shortestStrings.clear();  // очищаем список, так как нашли новую максимальную длину
+                shortestStrings.add(list.get(i)); // добавляем текущую строку
             } else if (list.get(i).length() == minLength) {
-                longestStrings.add(list.get(i));  // добавляем строку с такой же максимальной длиной
+                shortestStrings.add(list.get(i));  // добавляем строку с такой же максимальной длиной
             }
 
         }
         
         System.out.println("Вывод всех самых коротких строк: ");
-        for (int i = 0; i < longestStrings.size(); i++) {
-            System.out.println(longestStrings.get(i));
+        for (int i = 0; i < shortestStrings.size(); i++) {
+            System.out.println(shortestStrings.get(i));
         }
 
 
