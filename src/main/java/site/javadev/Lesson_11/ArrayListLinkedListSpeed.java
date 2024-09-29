@@ -5,77 +5,62 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ArrayListLinkedListSpeed {
-
     public static void main(String[] args) {
-        int numberOfOperations = 100000;
 
-        // Тестируем ArrayList и LinkedList
+        // Ожидания
+        System.out.println("Ожидания:");
+        System.out.println("ArrayList:");
+        System.out.println(" - Вставка в конец: должна быть быстрой (но может замедляться из-за расширения массива).");
+        System.out.println(" - Вставка в начало: будет медленной, так как все элементы сдвигаются вправо.");
+        System.out.println("LinkedList:");
+        System.out.println(" - Вставка в конец: быстрая, так как элементы добавляются напрямую.");
+        System.out.println(" - Вставка в начало: быстрая, так как элементы добавляются напрямую к началу списка.\n");
+
+        // Тестирование вставки в конец списка
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
+        int elementCount = 100_000;
 
-        // Тест вставки в конец списка
-        System.out.println("\nТестирование вставки в конец списка:");
-
-        // ArrayList - вставка в конец
-        long arrayListEndStart = System.currentTimeMillis();
-        for (int i = 0; i < numberOfOperations; i++) {
+        // Вставка в конец для ArrayList
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < elementCount; i++) {
             arrayList.add(i);
         }
-        long arrayListEndFinish = System.currentTimeMillis();
-        long arrayListEndTime = arrayListEndFinish - arrayListEndStart;
-        System.out.println("ArrayList: вставка в конец заняла " + arrayListEndTime + " мс");
+        long arrayListEndInsertTime = System.currentTimeMillis() - startTime;
 
-        // LinkedList - вставка в конец
-        long linkedListEndStart = System.currentTimeMillis();
-        for (int i = 0; i < numberOfOperations; i++) {
+        // Вставка в конец для LinkedList
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < elementCount; i++) {
             linkedList.add(i);
         }
-        long linkedListEndFinish = System.currentTimeMillis();
-        long linkedListEndTime = linkedListEndFinish - linkedListEndStart;
-        System.out.println("LinkedList: вставка в конец заняла " + linkedListEndTime + " мс");
+        long linkedListEndInsertTime = System.currentTimeMillis() - startTime;
 
-        // Тест вставки в начало списка
-        System.out.println("\nТестирование вставки в начало списка:");
+        // Тестирование вставки в начало списка
+        arrayList.clear();
+        linkedList.clear();
 
-        // ArrayList - вставка в начало
-        long arrayListStartStart = System.currentTimeMillis();
-        for (int i = 0; i < numberOfOperations; i++) {
+        // Вставка в начало для ArrayList
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < elementCount; i++) {
             arrayList.add(0, i);
         }
-        long arrayListStartFinish = System.currentTimeMillis();
-        long arrayListStartTime = arrayListStartFinish - arrayListStartStart;
-        System.out.println("ArrayList: вставка в начало заняла " + arrayListStartTime + " мс");
+        long arrayListStartInsertTime = System.currentTimeMillis() - startTime;
 
-        // LinkedList - вставка в начало
-        long linkedListStartStart = System.currentTimeMillis();
-        for (int i = 0; i < numberOfOperations; i++) {
+        // Вставка в начало для LinkedList
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < elementCount; i++) {
             linkedList.add(0, i);
         }
-        long linkedListStartFinish = System.currentTimeMillis();
-        long linkedListStartTime = linkedListStartFinish - linkedListStartStart;
-        System.out.println("LinkedList: вставка в начало заняла " + linkedListStartTime + " мс");
+        long linkedListStartInsertTime = System.currentTimeMillis() - startTime;
 
-        // Ожидания для ArrayList и LinkedList
-        System.out.println("\nОжидания:");
+        // Вывод реальных результатов
+        System.out.println("Реальные результаты:");
         System.out.println("ArrayList:");
-        System.out.println("  - Вставка в конец: должна быть быстрой (но может замедляться из-за расширения массива).");
-        System.out.println("  - Вставка в начало: будет медленной, так как все элементы сдвигаются вправо.");
+        System.out.println(" - Вставка в конец заняла: " + arrayListEndInsertTime + " мс");
+        System.out.println(" - Вставка в начало заняла: " + arrayListStartInsertTime + " мс");
         System.out.println("LinkedList:");
-        System.out.println("  - Вставка в конец: быстрая, так как элементы добавляются напрямую.");
-        System.out.println("  - Вставка в начало: быстрая, так как элементы добавляются напрямую к началу списка.");
+        System.out.println(" - Вставка в конец заняла: " + linkedListEndInsertTime + " мс");
+        System.out.println(" - Вставка в начало заняла: " + linkedListStartInsertTime + " мс");
 
-        // Реальные результаты тестов
-        System.out.println("\nРеальные результаты:");
-        System.out.println("ArrayList:");
-        System.out.println("  - Вставка в конец заняла: " + arrayListEndTime + " мс");
-        System.out.println("  - Вставка в начало заняла: " + arrayListStartTime + " мс");
-        System.out.println("LinkedList:");
-        System.out.println("  - Вставка в конец заняла: " + linkedListEndTime + " мс");
-        System.out.println("  - Вставка в начало заняла: " + linkedListStartTime + " мс");
-
-        System.out.println("\nВывод:");
-        System.out.println("  Время работы вставки в конец для ArrayList было быстрым, но может замедляться при расширении.");
-        System.out.println("  Вставка в начало для ArrayList была медленной из-за сдвига элементов.");
-        System.out.println("  Время вставки для LinkedList было быстрым как в конец, так и в начало, как и ожидалось.");
     }
 }
