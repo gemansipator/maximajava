@@ -1,5 +1,8 @@
 package site.javadev.Lesson_11;
-
+/**
+ * Кроме задач необходимо сделать замеры сравнения
+ * ArrayList и LinkedList и сделать скриншоты с вашими результатами
+ */
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -36,7 +39,8 @@ public class ArrayListLinkedListSpeed {
         long linkedListEndInsertTime = System.currentTimeMillis() - startTime;
 
         // Тестирование вставки в начало списка
-        arrayList.clear();
+        // Вместо очистки создаём новый ArrayList
+        arrayList = new ArrayList<>();
         linkedList.clear();
 
         // Вставка в начало для ArrayList
