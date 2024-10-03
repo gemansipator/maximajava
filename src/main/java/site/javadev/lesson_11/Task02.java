@@ -1,4 +1,4 @@
-package site.javadev.Lesson_11;
+package site.javadev.lesson_11;
 
 import java.util.ArrayList;
 import java.util.List;

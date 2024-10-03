@@ -1,4 +1,4 @@
-package site.javadev.Lesson_11;
+package site.javadev.lesson_11;
 /**
  * Кроме задач необходимо сделать замеры сравнения
  * ArrayList и LinkedList и сделать скриншоты с вашими результатами
