@@ -8,11 +8,19 @@ import java.util.List;
  3. Вывести результат на экран, каждый элемент списка с новой строки.*/
 public class Task02 {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         list.add("мама");
         list.add("мыла");
         list.add("раму");
-        System.out.println(list);
+        for (int i = 0; i < list.size(); i++) {
+            result.add(list.get(i));
+            result.add("именно");
+
+        }
+        for(String s : result){
+            System.out.println(s);
+        }
     }
 }
 
