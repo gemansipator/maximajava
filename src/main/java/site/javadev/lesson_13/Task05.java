@@ -11,17 +11,17 @@ import java.util.Scanner;
 public class Task05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> listOfLines = new ArrayList<>();
+        ArrayList<String> lines = new ArrayList<>();
         int indexOfDisorder = -1;  // Переменная для хранения индекса нарушающего элемента
 
         // Вводим 10 строк с клавиатуры
         for (int i = 0; i < 10; i++) {
-            listOfLines.add(sc.next());
+            lines.add(sc.next());
         }
 
         // Проверяем упорядоченность списка по длине строк
-        for (int i = 0; i < listOfLines.size() - 1; i++) {
-            if (listOfLines.get(i).length() > listOfLines.get(i + 1).length()) {
+        for (int i = 0; i < lines.size() - 1; i++) {
+            if (lines.get(i).length() > lines.get(i + 1).length()) {
                 indexOfDisorder = i + 1;  // Запоминаем индекс нарушающего элемента (следующий элемент)
                 break;  // Прерываем цикл, как только нашли первое нарушение
             }
