@@ -17,9 +17,9 @@ public class Task7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите время в минутах: ");
-        double t = scanner.nextDouble();  // Используем double для вещественного числа
+        int t = scanner.nextInt();  // Используем int для вещественного числа
 
-        double remainder = t % 5;
+        int remainder = t % 5;
 
         if(remainder <3){
             System.out.println("Зеленый сигнал");
