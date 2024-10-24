@@ -1,11 +1,13 @@
 package site.javadev.lesson_16;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class UserTest {
 
     @Test
+    @DisplayName("Проверка создания пользователя\"")
     public void testUserCreation() {
         // Создаем нового пользователя
         User user = new User("Иван", 18);
@@ -16,6 +18,7 @@ public class UserTest {
     }
 
     @Test
+    @DisplayName("Проверка создания пользователя\"")
     public void testUserAgeUpdate() {
         // Создаем нового пользователя
         User user = new User("Мария", 25);
