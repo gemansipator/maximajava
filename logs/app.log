@@ -1,21 +1,12 @@
-2024-10-23 15:21:52 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
-2024-10-23 15:21:52 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
-2024-10-23 15:21:52 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
-2024-10-23 15:23:25 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
-2024-10-23 15:23:25 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
-2024-10-23 15:23:25 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
-2024-10-23 15:25:44 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
-2024-10-23 15:25:44 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
-2024-10-23 15:25:44 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
-2024-10-23 15:26:18 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
-2024-10-23 15:26:18 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
-2024-10-23 15:26:18 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
-2024-10-23 15:26:18 [main] ERROR site.javadev.lesson_16.Task01 - Произошла ошибка: 
+2024-10-24 07:47:51 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
+2024-10-24 07:47:51 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
+2024-10-24 07:47:51 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
+2024-10-24 07:47:51 [main] ERROR site.javadev.lesson_16.Task01 - Произошла ошибка: 
 java.lang.ArithmeticException: / by zero
 	at site.javadev.lesson_16.Task01.main(Task01.java:26)
-2024-10-23 15:26:34 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
-2024-10-23 15:26:34 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
-2024-10-23 15:26:34 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
-2024-10-23 15:26:34 [main] ERROR site.javadev.lesson_16.Task01 - Произошла ошибка: 
+2024-10-24 07:48:18 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Иван, age=18)
+2024-10-24 07:48:18 [main] INFO  site.javadev.lesson_16.Task01 - Создан пользователь: User(name=Мария, age=25)
+2024-10-24 07:48:18 [main] INFO  site.javadev.lesson_16.Task01 - Возраст пользователя обновлён: User(name=Мария, age=26)
+2024-10-24 07:48:18 [main] ERROR site.javadev.lesson_16.Task01 - Произошла ошибка: 
 java.lang.ArithmeticException: / by zero
 	at site.javadev.lesson_16.Task01.main(Task01.java:26)
