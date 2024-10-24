@@ -1,0 +1,26 @@
+<configuration>
+    <!-- Определяем RollingFileAppender -->
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/app.log</file> <!-- Путь к основному файлу логов -->
+        <append>true</append> <!-- Добавление новых логов в конец файла -->
+
+        <!-- Определяем политику ротации -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern> <!-- Шаблон имен файлов -->
+            <maxFileSize>10MB</maxFileSize> <!-- Максимальный размер файла -->
+            <maxHistory>10</maxHistory> <!-- Максимальное количество старых файлов -->
+            <totalSizeCap>100MB</totalSizeCap> <!-- Общий лимит размера логов (опционально) -->
+        </rollingPolicy>
+
+        <!-- Определяем формат логов -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Определяем корневой уровень логирования -->
+    <root level="DEBUG">
+        <appender-ref ref="ROLLING" />
+    </root>
+
+</configuration>
